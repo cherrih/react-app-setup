@@ -90,7 +90,7 @@ We'll modify their package.json a little bit:
   }
 ```
 
-Run 'npm install' to get your webpack and webpack-cli installed. Remember to run the npm commands for [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) and [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react).
+Run 'npm install' to get your webpack and webpack-cli installed. Remember to run the npm commands for [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env), [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) and [babel-loader](https://github.com/babel/babel-loader).
 
 After running 'npm install --save-dev @babel/preset-env' and 'npm install --save-dev @babel/preset-react' you should see these pop up in the "devDependencies" object.
 
