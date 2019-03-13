@@ -144,8 +144,10 @@ In our server/index.js we want to serve up our static files. We will be using [e
 ```
 var express = require('express')
 var app = express()
-
-app.use(express.static('public'));
+ 
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
  
 app.listen(3000);
 ```
