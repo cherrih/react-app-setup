@@ -12,9 +12,12 @@ Let's start by setting up the folders and files we will initially need.
   |- index.js
 |- src
   |- index.jsx
+|- .gitignore
 ```
 
 'public' is where our bundle will live once Webpack has cast its compiling magic, 'server' is where we will serve up our static files and 'src' is where our React components will live waiting for the magic.
+
+Go ahead and add the line `node_modules` to the .gitignore file.
 
 ### Setting up Webpack and Babel
 To compile our modules, we're going to use [Webpack](https://webpack.js.org/guides/getting-started/) _(psst... this is another great link to bookark)_
