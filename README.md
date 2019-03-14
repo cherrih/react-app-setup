@@ -39,7 +39,7 @@ module.exports = {
 
 ```
 
-We need to add a few more rules in because we're using React. Let's head over to the [Webpack babel-loader docs] (https://webpack.js.org/loaders/babel-loader/)
+We need to add a few more rules in because we're using React. Let's head over to the [Webpack babel-loader docs](https://webpack.js.org/loaders/babel-loader/)
 
 Inside our module.exports object, below our output key, let's add:
 
@@ -60,7 +60,7 @@ Inside our module.exports object, below our output key, let's add:
   },
 ```
 
-Now, because we're including [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) and [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) we need to remember to install these and for that, we'll need to setup our package.json.
+Now, because we're including babel-loader, @babel/core, [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) and [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) we need to remember to install these and for that, we'll need to setup our package.json.
 
 ### Setting up our package.json
 
