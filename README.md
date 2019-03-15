@@ -20,7 +20,7 @@ Let's start by setting up the folders and files we will initially need.
 Go ahead and add the line `node_modules` to the .gitignore file.
 
 ### Setting up Webpack and Babel
-To compile our modules, we're going to use [Webpack](https://webpack.js.org/guides/getting-started/) _(psst... this is another great link to bookark)_
+To compile our modules, we're going to use [Webpack](https://webpack.js.org/guides/getting-started/) _(psst... this is another great link to bookmark)_
 
 Go ahead and create two files in your root directory: 'webpack.config.js' and 'package.json'.
 
@@ -44,7 +44,7 @@ module.exports = {
 
 We need to add a few more rules in because we're using React. Let's head over to the [Webpack babel-loader docs](https://webpack.js.org/loaders/babel-loader/)
 
-Inside our module.exports object, below our output key, let's add:
+Inside our module.exports object, below our 'output' key, let's add:
 
 ```
   module: {
@@ -63,7 +63,7 @@ Inside our module.exports object, below our output key, let's add:
   },
 ```
 
-Now, because we're including babel-loader, @babel/core, [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) and [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) we need to remember to install these and for that, we'll need to setup our package.json.
+Now, because we're including [babel-loader](https://www.npmjs.com/package/babel-loader), [@babel/core](https://www.npmjs.com/package/@babel/core), [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) and [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) we need to remember to install these and for that, we'll need to setup our package.json.
 
 ### Setting up our package.json
 
@@ -93,9 +93,9 @@ We'll modify their package.json a little bit:
   }
 ```
 
-Run 'npm install' to get your webpack and webpack-cli installed. Remember to run the npm commands for [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env), [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react) and [babel-loader](https://github.com/babel/babel-loader).
+Run 'npm install' to get your webpack and webpack-cli installed. Remember to run the npm commands for [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env), [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react), [babel-loader](https://github.com/babel/babel-loader) and [@babel/core](https://www.npmjs.com/package/@babel/core).
 
-After running 'npm install --save-dev @babel/preset-env' and 'npm install --save-dev @babel/preset-react' you should see these pop up in the "devDependencies" object.
+After running 'npm install --save-dev @babel/preset-env @babel/preset-react babel-loafer @babel/core' you should see these pop up in your package.json the "devDependencies" object.
 
 While we're here, let's think about what else we're going to need. 
 - We're building a react app, so we probably need [react](https://www.npmjs.com/package/react)
