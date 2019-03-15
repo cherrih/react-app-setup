@@ -168,7 +168,7 @@ app.listen(port, () => console.log('listening on: ', port));
 ```
 
 
-### That's it!!
+### That's (almost) it!!
 
 Congratulations!!! The final steps are 
 
